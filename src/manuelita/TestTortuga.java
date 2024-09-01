@@ -2,13 +2,17 @@ package manuelita;
 
 import junit.framework.TestCase;
 
-public class TestManuelita extends TestCase {
-    Manuelita manuelita = new Manuelita();
+public class TestTortuga extends TestCase {
+    Tortuga manuelita = new Tortuga();
+    Tortuga bartolo = new Tortuga();
 
     public void setUp() {
         manuelita.setResidencia("Pehuajo");
         manuelita.setEnergia(1000);
         manuelita.setPeso(300);
+        bartolo.setResidencia("Pehuajo");
+        bartolo.setEnergia(1000);
+        bartolo.setPeso(300);
     }
 
     public void testDondeEsta() {
@@ -23,5 +27,10 @@ public class TestManuelita extends TestCase {
     public void testCaminarKm() {
         manuelita.caminarKm(50);
         assertTrue(manuelita.getEnergia() == 975);
+    }
+
+    public void testComerGramos() {
+        bartolo.comerGramos(100);
+        assertTrue(bartolo.getEnergia() == 1300);
     }
 }

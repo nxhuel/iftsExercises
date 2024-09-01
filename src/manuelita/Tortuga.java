@@ -1,17 +1,26 @@
 package manuelita;
 
-public class Bartolo {
-//    Atributos
+public class Tortuga {
     private String residencia;
     private double energia;
     private double peso;
 
-//    Metodos
+    public void cambiarResidencia(String nuevaResidencia) {
+        this.residencia = nuevaResidencia;
+    }
+
+    public void caminarKm(double km) {
+        this.energia = energia - (km / 2);
+    }
+
     public void comerGramos(double gramos) {
         energia = energia + (gramos * 3);
     }
 
-//    Getters and Setters
+    public String getResidencia() {
+        return residencia;
+    }
+
     public void setResidencia(String residencia) {
         this.residencia = residencia;
     }
