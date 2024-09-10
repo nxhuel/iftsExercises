@@ -1,7 +1,6 @@
 package seguridadVial;
 
 public class Auto implements Vehiculo {
-    private double velocidadBase;
     private boolean tieneRuedaDeAux;
     private double plusVelocidad;
 
@@ -12,15 +11,7 @@ public class Auto implements Vehiculo {
 
     @Override
     public double calcularVelocidadFinal() {
-        return velocidadBase + plusVelocidad;
-    }
-
-    public double getVelocidadBase() {
-        return velocidadBase;
-    }
-
-    public void setVelocidadBase(double velocidadBase) {
-        this.velocidadBase = velocidadBase;
+        return 100 + plusVelocidad;
     }
 
     public boolean isTieneRuedaDeAux() {

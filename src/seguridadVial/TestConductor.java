@@ -11,7 +11,6 @@ public class TestConductor extends TestCase {
         conductorUno.setNombre("conductor uno");
         conductorUno.setVehiculo(auto);
         conductorUno.setTieneRegistro(true);
-        auto.setVelocidadBase(100);
         auto.setTieneRuedaDeAux(true);
         auto.setPlusVelocidad(30);
     }
