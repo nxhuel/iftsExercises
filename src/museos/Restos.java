@@ -13,7 +13,7 @@ public class Restos implements IElemento {
 
     @Override
     public void acondicionarlo() {
-        cantPolvo -= cantPolvo  * 0.9;
+        cantPolvo -= cantPolvo * 0.9;
     }
 
     @Override

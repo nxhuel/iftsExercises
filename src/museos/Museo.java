@@ -16,4 +16,8 @@ public class Museo {
     public int cantidadElementos() {
         return elementos.size();
     }
+
+    public void agregarElemento(IElemento elemento) {
+        elementos.add(elemento);
+    }
 }
