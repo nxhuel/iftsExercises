@@ -66,11 +66,17 @@ public class Micro {
         return this.capacidad() - this.cantPasajeros();
     }
 
+    //    PUNTO DOS
     public void subirPasajero(IPasajero pasajero) {
-        pasajeros.add(pasajero);
+        if (this.puedeSubir(pasajero)) {
+            pasajeros.add(pasajero);
+        }
     }
 
-    public void bajarPasajero() {
-        pasajeros.removeFirst();
+    //    PUNTO TRES
+    public void bajarPasajero(IPasajero pasajero) {
+        if (pasajeros.contains(pasajero)) {
+            pasajeros.remove(pasajero);
+        }
     }
 }
